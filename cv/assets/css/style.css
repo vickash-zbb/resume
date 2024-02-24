@@ -124,7 +124,7 @@ h3.subtitle {
     text-transform: capitalize;
     font-weight: 700;
     color: #282828;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
     padding-bottom: 5px;
 }
 
@@ -2433,14 +2433,97 @@ ul.share-post {
     border-radius: 0;
     height: 200px;
 }
-h3.subtitle::after {
+/* h3.subtitle::after {
     content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
     width: 60%;
 
+} */
+
+h3 {
+	padding: 12px 16px;
+    overflow: hidden;
 }
+
+h3 span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #ffffff, #2801a9);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+h3 span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #ffffff, #2801a9);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+h3 span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, #ffffff, #2801a9);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+h3 span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #ffffff, #2801a9);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
 .skill img{
     width: 32px ;
     margin-right: 4px;

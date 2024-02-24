@@ -2531,3 +2531,12 @@ h3 span:nth-child(4) {
 .home_type h1{
     font-family: none;
 }
+li.active_filter::before {
+    content: "";
+    position: absolute;
+    background-color: #2801a9;
+    width: 50%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+}

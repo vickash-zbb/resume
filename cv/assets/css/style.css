@@ -2433,3 +2433,11 @@ ul.share-post {
     border-radius: 0;
     height: 200px;
 }
+h3.subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+
+}

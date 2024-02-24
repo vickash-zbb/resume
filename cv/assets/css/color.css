@@ -30,7 +30,7 @@
 	.comment-reply a,
 	.comment-reply span,
 	.comment-content a {
-	    color: #2545ff !important;
+	    color: #0309B0 !important;
 	}
 
 	.sec_title h2:after,
@@ -61,7 +61,7 @@
 	input[type="submit"]:before,
 	.contact .contact_form .submit:hover,
 	header.entry-header:after {
-	    background-color: #2545ff;
+	    background-color: #0309B0;
 	}
 
 	input[type="submit"].btn,
@@ -78,19 +78,22 @@
 	.contact .contact_form .submit:hover,
 	form.post-password-form input[type="password"]:focus,
 	form.post-password-form input[type="submit"]:active,
+	
 	form.post-password-form input[type="submit"]:focus {
-	    border-color: #2545ff;
+	    border-color: #0309B0;
 	}
-
+	h3.subtitle::after{
+		border: 2px solid #0309B0;
+	}
 	.resume .date span:before,
 	.entry-footer .tags-links a:hover:before {
-		border-right-color: #2545ff;
+		border-right-color: #0309B0;
 	}
 
 	.menu_list .home-item svg:hover {
-    	fill:#2545ff;
+    	fill:#0309B0;
 	}
 
 	g.Header {
-    	stroke:#2545ff;
+    	stroke:#0309B0;
 	}

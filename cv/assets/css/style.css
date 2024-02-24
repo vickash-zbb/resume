@@ -773,7 +773,7 @@ span.home--line:nth-child(3){
 }
 
 .home_type .overlayer {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgb(0 0 0 / 27%);
     height: 100%;
     position: relative;
     z-index: 11;
@@ -2440,4 +2440,11 @@ h3.subtitle::after {
     left: 0;
     width: 60%;
 
+}
+.skill img{
+    width: 32px ;
+    margin-right: 4px;
+}
+.home_type h1{
+    font-family: none;
 }

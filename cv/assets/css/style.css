@@ -1553,7 +1553,7 @@ li.active_filter:after {
 
 .portfolio_sec .project_content:hover img {
     transform: scale(1.3);
-    filter: blur(10px);
+    /* filter: blur(10px); */
 }
 
 .portfolio_sec .item .info {

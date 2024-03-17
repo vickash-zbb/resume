@@ -208,7 +208,8 @@
                                             autocomplete="off"></textarea>
                                     </div>
                                     <div class="form_btn">
-                                        <button class="btn tj-btn-primary" type="submit">Send Message</button>
+                                        <button onclick="sendemail2()" class="btn tj-btn-primary" type="button">Send
+                                            Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -463,7 +464,8 @@
                                                 autocomplete="off"></textarea>
                                         </div>
                                         <div class="form_btn">
-                                            <button class="btn tj-btn-primary" type="submit">Send Message</button>
+                                            <button onclick="sendemail2()" class="btn tj-btn-primary" type="button">Send
+                                                Message</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1337,8 +1339,6 @@
 
 
     <script>
-
-
         function sendemail() {
 
             var email = document.getElementById("conEmail").value;
@@ -1358,13 +1358,34 @@
             emailjs.send('service_5yyxvmo', 'template_2t48q36', templateParams)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
-                    window.alert("#message_sent");
-
+                    location.reload();
                 })
 
+        }
+    </script>
+    <script>
+        function sendemail2() {
+
+            var email = document.getElementById("semail").value;
+            var name = document.getElementById("name").value;
+
+            var message = document.getElementById("smessage").value;
+
+
+            var templateParams = {
+                email: email,
+                to_name: name,
+                message: message,
+
+            };
+
+            emailjs.send('service_5yyxvmo', 'template_gq25zsd', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    location.reload();
+                })
 
         }
-
     </script>
 </body>
 
